@@ -14,6 +14,9 @@
         <link rel="stylesheet" href="main.css" />
         <script src="script.js"></script>
 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Solway" >
+
     </head>
 
     <body>
@@ -23,6 +26,24 @@
         </div>
 
         <div id="content">
+
+            <div id="navBar">
+
+                <a href="home.html">Home</a>
+
+                <div id="search" onmouseenter="showDropdown()" onmouseleave="hideDropdown()">
+                    <input id="searchBar" type="text" placeholder="Search" onkeyup="showDropdown(); filterSearchItems()">
+                    <div id="dropdown">
+                        <a href="contact.html">Contact</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="https://github.com/EmperorOwl">Github</a>
+                        <a href="https://emperorowl.gitbook.io/das/">DAS</a>
+                    </div>
+                </div>
+
+                <a href="about.html">About</a>
+
+            </div>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie ante vitae erat feugiat, sit amet mollis justo porta. Nam at posuere enim. Aliquam ac luctus quam. Fusce sit amet rutrum diam. Quisque ex eros, iaculis et quam nec, malesuada porta nisl. Morbi luctus tempus tellus, et tempus elit dignissim ut. Donec hendrerit aliquet odio, vel vestibulum arcu aliquet ut. Pellentesque quam velit, vehicula eu dignissim non, semper quis dui. Nunc ac dui et felis rhoncus iaculis. Suspendisse turpis nulla, accumsan quis lacus eget, convallis varius odio. Duis vulputate nisl leo, vitae commodo tellus elementum sit amet. Curabitur lorem felis, condimentum sit amet dapibus eu, maximus ut dui. Proin molestie, tellus dapibus imperdiet porta, leo nulla sodales urna, nec laoreet ex arcu cursus ipsum. Aliquam fringilla nulla non sapien lacinia, interdum pulvinar orci gravida. Maecenas fermentum eros eget scelerisque interdum.</p>
 

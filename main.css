@@ -46,6 +46,7 @@ a {
 }
 
 #searchBar {
+    position: relative;
     width: 9vw;
     height: 2.5vw;
     background-color: aliceblue;
@@ -59,14 +60,17 @@ a {
     color: black;
     font-family: 'Solway';
     font-size: 1.25vw;
-    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
 }
 
 #searchBar.active {
     width: 9vw;
     outline: none; /* remove default outline */
     border-radius: 1vw 1vw 0vw 0vw;
-    border-bottom: 0.1vw dashed black;
 }
 
 #dropdown {
@@ -74,7 +78,9 @@ a {
     display: none;
     position: absolute;
     background-color: aliceblue;
+    box-shadow: -0.25vw 0.25vw 0.25vw white;
     text-align: center;
+    z-index: 1;
 }
 
 #dropdown.show {
@@ -85,7 +91,11 @@ a {
     display: block;
     font-size: 1vw;
     padding: 0.75vw;
-    border-bottom: 0.1vw dashed black;
+    border-top: 0.1vw dashed black;
+}
+
+#dropdown:last-child {
+    border-radius: 0vw 0vw 1vw 1vw;
 }
 
 #main {

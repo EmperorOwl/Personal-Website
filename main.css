@@ -6,11 +6,17 @@ padding: {top} {right} {bottom} {left}
 padding: {top & bottom} {left & right}
 border: {width} {syle} {color}
 border-radius: {top left} {top right} {bottom right} {bottom left}
+box-shadow: {horizontal offset} {vertical offset} {blur radius} {color}
 
 */
 
 body, h1, h2, h3, h4, h5, h6, hr, p {
     margin: 0; /* remove default margin */
+}
+
+a {
+    color: black; /* remove default blue color */
+    text-decoration: none; /* remove default underline */
 }
 
 #navBar {
@@ -24,11 +30,9 @@ body, h1, h2, h3, h4, h5, h6, hr, p {
 }
 
 #navBar a {
-    color: black;
     font-family: "Solway";
     font-size: 1.25vw;
     line-height: 1.25vw;
-    text-decoration: none; /* remove default underline */
 }
 
 #navBar a:hover {
@@ -84,6 +88,121 @@ body, h1, h2, h3, h4, h5, h6, hr, p {
     border-bottom: 0.1vw dashed black;
 }
 
+#main {
+    width: 100vw;
+    height: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, skyblue 43%, white 0%);
+}
+
+#hero {
+    width: 20vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    position: relative;
+    box-shadow: -0.75vw 0.75vw 0.75vw lightblue;
+    animation: slide-in-left-to-right-fade-in 1.5s 0s forwards;
+}
+
+#hero img {
+    width: 7.5vw;
+    height: 7.5vw;
+    margin-bottom: 0.75vw;
+}
+
+#hero h1 {
+    font-family: 'Share Tech';
+    font-size: 2.5vw;
+    margin-bottom: 0.25vw;
+}
+
+#hero h2 {
+    font-family: 'Share Tech';
+    font-size: 1.75vw;
+    font-weight: normal;
+}
+
+#hero hr {
+    background-color: mediumpurple;
+    width: 3.5vw;
+    height: 0.25vw;
+    border: none;
+    margin-bottom: 1.25vw;
+    margin-top: 1.25vw;
+}
+
+#hero h3 {
+    font-family: 'Share Tech';
+    font-size: 1.5vw;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.1vw;
+    margin-bottom: 1.5vw;
+}
+
+#contactButtons {
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#contactButtons img {
+    margin-top: 1vw;
+    width: 1.75vw;
+    height: 1.75vw;
+    padding: 0vw 0.75vw;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 25vw;
+    height: 30vw;
+    padding: 2.5vw;
+    box-sizing: border-box;
+    animation: slide-in-right-to-left-fade-in 1.5s 0s forwards;
+}
+
+#intro h4 {
+    font-family: monospace;
+    font-size: 3.5vw;
+}
+
+#intro button {
+    font-size: 1vw;
+    font-family: "Solway";
+    text-transform: uppercase;
+    border-radius: 1vw;
+    border: 0.2vw solid black;
+    background-color: white;
+    padding: 0.25vw 1.75vw;
+}
+
+#intro button:hover{
+    background-color: skyblue;
+    border-color: skyblue;
+    color: white;
+    cursor: pointer;
+}
+
+#intro p {
+    font-family: 'Share Tech';
+    font-size: 1.25vw;
+}
+
 #loader {
     width: 100vw;
     height: 100vh;
@@ -101,4 +220,14 @@ body, h1, h2, h3, h4, h5, h6, hr, p {
 @keyframes fade-grow-spin {
     from    {opacity: 0; transform: scale(0) rotate(-180deg);}
     to      {opacity: 1; transform: scale(1) rotate(0deg);}
+}
+
+@keyframes slide-in-right-to-left-fade-in {
+    from    {transform: translate(100%); opacity: 0;}
+    to      {transform: translate(0%); opacity: 1;}
+}
+
+@keyframes slide-in-left-to-right-fade-in {
+    from    {transform: translate(-100%); opacity: 0;}
+    to      {transform: translate(0%); opacity: 1;}
 }

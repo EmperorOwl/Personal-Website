@@ -203,6 +203,21 @@ a {
     font-size: 1.25vw;
 }
 
+#footer {
+    width: 100vw;
+    height: 3.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer p {
+    font-size: 1.25vw;
+    font-family: "Solway";
+    color: grey;
+    opacity: 0.8;
+}
+
 #loader {
     width: 100vw;
     height: 100vh;

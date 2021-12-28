@@ -179,6 +179,7 @@ a {
 #intro h4 {
     font-family: monospace;
     font-size: 3.5vw;
+    margin-bottom: 1vw;
 }
 
 #intro button {
@@ -189,6 +190,7 @@ a {
     border: 0.2vw solid black;
     background-color: white;
     padding: 0.25vw 1.75vw;
+    margin-bottom: 2vw;
 }
 
 #intro button:hover{

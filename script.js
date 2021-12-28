@@ -13,7 +13,7 @@ window.onload = function () {
             loader.style.display = "none";
             content.style.display = "block";
         },
-        1500 // 1500 ms = 1.5 s
+        750 // 750 ms = 0.75 s
     );
 };
 

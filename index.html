@@ -3,36 +3,61 @@
 
     <head>
 
+        <!-- Meta Info -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
+        <!-- Tab Info -->
         <title>Ray Lin</title>
+        <link rel="icon" href="resources/unicorn.png">
         <meta name="description" content="A website showcasing me and my projects.">
         <meta name="author" content="Ray Lin (EmperorOwl)">
 
-        <link rel="icon" href="resources/unicorn.png">
+
+
+        <!-- Stylesheets -->
         <link rel="stylesheet" href="main.css"/>
         <link rel="stylesheet" href="animation.css"/>
-        <script src="script.js"></script>
+        <link rel="stylesheet" href="mobile.css"/>
 
+
+
+        <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Solway">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Share+Tech">
+
+
+
+        <!-- Scripts -->
+        <script src="script.js"></script>
 
     </head>
 
     <body>
 
+        <!-- Loading Screen -->
         <div id="loader">
             <img src="resources/unicorn.png">
         </div>
 
+
+
+        <!-- Home Page -->
         <div id="content">
 
+
+
+            <!-- Navigation Bar -->
             <div id="navBar">
 
                 <a href="index.html">Home</a>
 
+
+
+                <!-- Search Bar -->
                 <div id="search" onmouseenter="showDropdown()" onmouseleave="hideDropdown()">
                     <input id="searchBar" type="text" placeholder="Search" onkeyup="showDropdown(); filterSearchItems()">
                     <div id="dropdown">
@@ -43,18 +68,30 @@
                     </div>
                 </div>
 
+
+
                 <a href="about.html">About</a>
 
             </div>
 
+
+
+            <!-- Main Content -->
             <div id="main">
 
+
+
+                <!-- Hero Block -->
                 <div id="hero">
+
                     <img src="resources/unicorn.png">
                     <h1>Ray Lin</h1>
                     <h2><i>EmperorOwl</i></h2>
                     <hr>
                     <h3>Aspiring Engineer</h3>
+
+
+                    <!-- Contact Buttons -->
                     <div id="contactButtons">
                         <a href="https://www.facebook.com/emperorowl/" target="_blank">
                             <img src="resources/facebook.png">
@@ -69,8 +106,12 @@
                             <img src="resources/instagram.png">
                         </a>
                     </div>
+
                 </div>
 
+
+
+                <!-- Intro Block -->
                 <div id="intro">
 
                     <h4>Hello👋</h4>
@@ -90,6 +131,9 @@
 
             </div>
 
+
+
+            <!-- Footer -->
             <div id="footer">
                 <p>Made with &hearts; in Melbourne, Australia</p>
             </div>

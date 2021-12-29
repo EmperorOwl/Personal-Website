@@ -1,3 +1,5 @@
+// Function for fake loading bar
+
 window.onload = function () {
 
     "use strict";
@@ -17,6 +19,10 @@ window.onload = function () {
     );
 };
 
+
+
+// Function for showing and hiding dropdown of search items
+
 function showDropdown() {
 
     "use strict";
@@ -30,6 +36,10 @@ function hideDropdown() {
     document.getElementById("dropdown").classList.remove("show");
     document.getElementById("searchBar").classList.remove("active");
 }
+
+
+
+// Function for filtering search items
 
 function filterSearchItems() {
 

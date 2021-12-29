@@ -52,7 +52,6 @@ a {
     box-sizing: border-box;
     width: 100vw;
     height: 5vw;
-    padding: 1.25vw;
 }
 
 #navBar a {
@@ -222,7 +221,7 @@ a {
 
 #intro button {
     padding: 0.25vw 1.75vw;
-    border: 0.2vw solid black;
+    border: 0.25vw solid black;
     border-radius: 1vw;
     margin-bottom: 2vw;
     background-color: white;

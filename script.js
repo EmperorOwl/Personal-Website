@@ -3,7 +3,6 @@
 window.onload = function () {
 
     "use strict";
-
     var loader = document.getElementById("loader"),
         content = document.getElementById("content");
 
@@ -56,5 +55,23 @@ function filterSearchItems() {
         } else {
             searchItems[i].style.display = "none";
         }
+    }
+}
+
+
+
+// Function for resetting search bar
+
+function resetSearchBar() {
+
+    "use strict";
+    var searchBar = document.getElementById("searchBar"),
+        dropdown = document.getElementById("dropdown"),
+        searchItems = dropdown.getElementsByTagName('a'),
+        i = 0;
+
+    searchBar.value = "";
+    for (i = 0; i < searchItems.length; i += 1) {
+        searchItems[i].style.display = "";
     }
 }
